@@ -24,7 +24,7 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
 
 //apply plugin: 'kotlin-parcelize'
-//apply plugin: 'dagger.hilt.android.plugin'
+apply plugin: 'dagger.hilt.android.plugin'
 //apply plugin: "androidx.navigation.safeargs.kotlin"
 
 def firebaseEnabled = false
@@ -103,10 +103,10 @@ dependencies {
 //    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
 //    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
 //
-////    implementation 'com.google.android.material:material:1.4.0'
-//    //di hilt
-//    implementation "com.google.dagger:hilt-android:$hilt_version"
-//    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+//    implementation 'com.google.android.material:material:1.4.0'
+    //di hilt
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
 
 
     // Test dependencies
