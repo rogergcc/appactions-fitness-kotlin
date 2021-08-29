@@ -23,6 +23,10 @@ apply plugin: 'kotlin-kapt'
 
 apply plugin: 'kotlin-android-extensions'
 
+//apply plugin: 'kotlin-parcelize'
+//apply plugin: 'dagger.hilt.android.plugin'
+//apply plugin: "androidx.navigation.safeargs.kotlin"
+
 def firebaseEnabled = false
 
 if (firebaseEnabled) {
@@ -30,12 +34,12 @@ if (firebaseEnabled) {
 }
 
 android {
-    compileSdkVersion 29
+    compileSdkVersion 30
 
     defaultConfig {
-        applicationId "com.devrel.android.fitactions"
-        minSdkVersion 21
-        targetSdkVersion 29
+        applicationId "com.rogergcc.android.fitactions"
+        minSdkVersion 26
+        targetSdkVersion 30
         versionCode 2
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -47,6 +51,11 @@ android {
                 arguments = ["room.incremental": "true"]
             }
         }
+    }
+
+    buildFeatures{
+        viewBinding true
+        dataBinding true
     }
 
     buildTypes {
@@ -84,6 +93,21 @@ dependencies {
 
     // AppActions and Slices
     implementation "androidx.slice:slice-builders-ktx:1.0.0-alpha6"
+
+//    //vm
+//    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+//    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+//
+//    //nav
+//    def nav_version = "2.3.5"
+//    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+//    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+//
+////    implementation 'com.google.android.material:material:1.4.0'
+//    //di hilt
+//    implementation "com.google.dagger:hilt-android:$hilt_version"
+//    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+
 
     // Test dependencies
     testImplementation 'junit:junit:4.12'

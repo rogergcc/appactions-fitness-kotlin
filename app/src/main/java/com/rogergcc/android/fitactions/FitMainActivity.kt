@@ -15,7 +15,7 @@
  *
  */
 
-package com.devrel.android.fitactions
+package com.rogergcc.android.fitactions
 
 import android.app.assist.AssistContent
 import android.content.Intent
@@ -24,11 +24,11 @@ import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import com.devrel.android.fitactions.home.FitStatsFragment
-import com.devrel.android.fitactions.model.FitActivity
-import com.devrel.android.fitactions.model.FitRepository
-import com.devrel.android.fitactions.tracking.FitTrackingFragment
-import com.devrel.android.fitactions.tracking.FitTrackingService
+import com.rogergcc.android.fitactions.home.FitStatsFragment
+import com.rogergcc.android.fitactions.model.FitActivity
+import com.rogergcc.android.fitactions.model.FitRepository
+import com.rogergcc.android.fitactions.tracking.FitTrackingFragment
+import com.rogergcc.android.fitactions.tracking.FitTrackingService
 import com.google.firebase.appindexing.Action
 import com.google.firebase.appindexing.FirebaseUserActions
 import com.google.firebase.appindexing.builders.AssistActionBuilder

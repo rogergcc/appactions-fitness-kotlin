@@ -15,13 +15,13 @@
  *
  */
 
-package com.devrel.android.fitactions.model
+package com.rogergcc.android.fitactions.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.Index
 import androidx.room.PrimaryKey
-import com.devrel.android.fitactions.R
+import com.rogergcc.android.fitactions.R
 
 /**
  * Entity that describes an activity performed by the user.

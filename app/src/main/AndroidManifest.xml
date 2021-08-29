@@ -17,13 +17,13 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.devrel.android.fitactions">
+    package="com.rogergcc.android.fitactions">
 
     <!-- Needed permission to start the FitTrackingService in foreground mode -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
-        android:name="com.devrel.android.fitactions.FitApp"
+        android:name="com.rogergcc.android.fitactions.FitApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -33,7 +33,7 @@
         tools:ignore="GoogleAppIndexingWarning">
 
         <activity
-            android:name="com.devrel.android.fitactions.FitMainActivity"
+            android:name="com.rogergcc.android.fitactions.FitMainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:launchMode="singleTask"
@@ -65,7 +65,7 @@
         </activity>
 
         <service
-            android:name="com.devrel.android.fitactions.tracking.FitTrackingService"
+            android:name="com.rogergcc.android.fitactions.tracking.FitTrackingService"
             android:enabled="true"
             android:exported="true" />
 
@@ -75,8 +75,8 @@
         <!-- This authority is used as urlTemplate for app actions with Slices -->
         <!-- And to grant access to SliceManager, see grantAssistantPermissions in FitApp.kt -->
         <provider
-            android:name="com.devrel.android.fitactions.slices.FitSliceProvider"
-            android:authorities="com.devrel.android.fitactions.slices.provider"
+            android:name="com.rogergcc.android.fitactions.slices.FitSliceProvider"
+            android:authorities="com.rogergcc.android.fitactions.slices.provider"
             android:exported="true">
 
             <intent-filter>

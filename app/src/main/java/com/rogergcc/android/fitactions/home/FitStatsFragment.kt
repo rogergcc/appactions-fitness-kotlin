@@ -15,7 +15,7 @@
  *
  */
 
-package com.devrel.android.fitactions.home
+package com.rogergcc.android.fitactions.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -23,8 +23,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
-import com.devrel.android.fitactions.R
-import com.devrel.android.fitactions.model.FitRepository
+import com.rogergcc.android.fitactions.R
+import com.rogergcc.android.fitactions.model.FitRepository
 import kotlinx.android.synthetic.main.fit_stats_fragment.*
 import java.util.concurrent.TimeUnit
 
